@@ -1,8 +1,11 @@
 module.exports = {
-    entry: "./entry.js",
+    entry: {
+        entry: "./entry.js",
+        test: "./test.js"
+    },
     output: {
         path: __dirname,
-        filename: "bundle.js",
+        filename: "[name].bundle.js",
 
         // export itself to a global var
         libraryTarget: "umd",
