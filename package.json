@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server -d --port 9090",
     "prestart": "npm install",
-    "build": "webpack"
+    "build": "webpack",
+    "prepublish": "webpack --optimize-minimize"
   },
   "author": "",
   "license": "ISC",
